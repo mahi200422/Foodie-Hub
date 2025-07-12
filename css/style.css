@@ -11,7 +11,7 @@ body::before{
     content: '';
     position: fixed;
     top: 0;left: 0;right: 0;bottom: 0;
-    background: url('../fiery-burger.jpg') no-repeat center center/cover;
+    background: url('fiery-burger.jpg') no-repeat center center/cover;
     z-index: -1;
     filter: brightness(0.6);
     background-attachment: scroll;
