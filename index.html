@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="favicon.png" type="image/x.icon">
+    <!-- Bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+     <!--css-->
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+     <style>
+      
+body::before{
+    content: '';
+    position: fixed;
+    top: 0;left: 0;right: 0;bottom: 0;
+    background: url('/fiery-burger.jpg') no-repeat center center/cover;
+    z-index: -1;
+    filter: brightness(0.6);
+    background-attachment: scroll;
+    background-size: cover;
+    background-position:center center;
+    background-repeat: no-repeat;
+
+}
+     </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+     <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <img src="image/1.png" alt="logo" width="30" height="30">
+        <span class="fw-bold">Foodie Hub</span>
+      </a>
+       
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse " id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a  class="nav-link" href="#Services">Services</a></li>
+            <li class="nav-item"><a  class="nav-link" href="#Restaurant">Restaurant</a></li>
+            <li class="nav-item"><a  class="nav-link" href="#Contact">Contact</a></li>
+             <li class="nav-item"><a  class="nav-link" href="#About">About</a></li>
+        </ul>
+      </div>
+     </div>
+    </nav>
+ <!-- welcome-banner -->
+<section id="home" class="welcome-banner d-flex align-items-center justify-content-center text-white text-center" >
+  <div class="container"> 
+    <h1 class="logo-animation"> <span>W</span><span>e</span><span>l</span><span>c</span><span>o</span><span>m</span><span>e</span>
+      <span>&nbsp;</span>  
+      <span>t</span><span>o</span>
+      <span>&nbsp;</span>
+      <span>F</span><span>oo</span><span>d</span><span>i</span><span>e</span> 
+      <span>&nbsp;</span>
+      <span>H</span><span>u</span><span>b</span></h1>
+  </div>
+</section>
+<!-- Top-picks -->
+<section id="Restaurant" class="Top-picks">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-12 mb-4">
+        <div class="card my-card text-white ">
+          <div class="card-body">
+            <h3 class="card-title d-flex justify-content-between align-content-center">Restaurants
+              <button class="btn btn-sm btn-outline-light" data-bs-toggle="collapse" data-bs-target="#restaurantList">▾</button>
+            </h3>
+            <div class="collapse" id="restaurantList">
+              <!-- restaurant1 -->
+              <div class="mt-3">
+                <h5>Basil & Coal</h5>
+                <button class="btn btn-sm   btn-outline-warning mb-2" data-bs-toggle="collapse" data-bs-target="#menu1">▾Menu</button>
+                <div class="collapse" id="menu1">
+                  <ul class="list-unstyled">
+                    <li class="mb-2 d-flex align-items-center"><img src="image/images.jpg"  class="me-2 rounded">Lamb Shashlik (Persian Lamb Ribs)<br>$18.99
+                    <button class="btn   btn-outline-warning btn-sm  ms-auto">Order</button></li>
+                     <li class="mb-2 d-flex align-items-center"><img src="image/Beef Seekh Kebab.jpg"  class="me-2 rounded">Beef Seekh Kebab<br>$20.00
+                    <button class="btn   btn-outline-warning btn-sm  ms-auto">  Order</button></li>
+                     <li class="mb-2 d-flex align-items-center"><img src="image/Koobideh Kebab.jpg" class="me-2 rounded">Koobideh Kebab<br>$17.50
+                    <button class="btn btn-sm   btn-outline-warning ms-auto">  Order</button></li>
+                     <li class="mb-2 d-flex align-items-center"><img src="image/Chicken tikka Kebab.jpg" class="me-2 rounded">Chicken tikka Kebab<br>$16.79
+                    <button class="btn btn-sm   btn-outline-warning ms-auto">  Order</button></li>
+                     <li class="mb-2 d-flex align-items-center"><img src="image/Kebab Barg.jpg"  class="me-2 rounded"> Kebab Barg (Grilled Lamb Filled)<br>$25
+                    <button class="btn btn-sm ms-auto   btn-outline-warning">  Order</button></li>
+                     <li class="mb-2 d-flex align-items-center"><img src="image/Adana Kebab.jpg"  class="me-2 rounded">Adana Kebab<br>$16.99
+                    <button class="btn btn-sm   btn-outline-warning ms-auto"> Order</button></li>
+                     <li class="mb-2 d-flex align-items-center"><img src="image/Doner Kebab.jpg"  class="me-2 rounded">Doner Kebab<br>$16.50
+                    <button class="btn btn-sm   btn-outline-warning ms-auto">  Order</button></li>
+                     <li class="mb-2 d-flex align-items-center"><img src="image/Seekh Kebab.jpg"  class="me-2 rounded">Seekh Kebab(Indian)<br>$25
+                    <button class="btn btn-sm   btn-outline-warning ms-auto">  Order</button></li>
+                     <li class="mb-2 d-flex align-items-center"><img src="image/Harissa Chicken Kebab.jpg"  class="me-2 rounded">Harissa Chicken Kebab<br>$11.79 
+                    <button class="btn btn-sm   btn-outline-warning ms-auto">  Order</button></li>
+                     <li class="mb-2 d-flex align-items-center"><img src="image/Mutton Boti Kebab.jpg"  class="me-2 rounded">Mutton Boti Kebab<br>$12.00
+                    <button class="btn btn-sm  ms-auto  btn-outline-warning ">Order</button></li>
+                  </ul>
+                  <ul class="list-unstyled mt-2">
+                    <li class="mb-2 d-flex align-items-center">
+                      <img src="image/Sparkling Pomegranate Juice.jpg"  class="me-2 rounded"> Sparkling Pomegranate Juice<br>$5.50
+                      <button class="   btn-outline-warning btn btn-sm  ms-auto">Order</button>
+                    </li>
+                     <li class="mb-2 d-flex align-items-center">
+                      <img src="image/Mojito Mocktail.jpg" class="me-2 rounded"> Mojito Mocktail<br>$5.25
+                      <button class="  btn-outline-warning btn btn-sm  ms-auto">Order</button>
+                    </li>
+                     <li class="mb-2 d-flex align-items-center">
+                      <img src="image/Rose Lemonade.jpg"  class="me-2 rounded"> Rose Lemonade<br>$4.99
+                      <button class="   btn-outline-warning btn btn-sm  ms-auto">Order</button>
+                    </li>
+                     <li class="mb-2 d-flex align-items-center">
+                      <img src="image/Virgin Pina Colada.jpg" class="me-2 rounded"> Virgin Pina Colada<br>$5.99
+                      <button class="btn btn-sm   btn-outline-warning ms-auto">Order</button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- restaurant2 -->
+                <div class="mt-3">
+                <h5>Grill Theory</h5>
+                <button class="btn btn-sm   btn-outline-warning mb-2" data-bs-toggle="collapse" data-bs-target="#menu2">▾Menu</button>
+                <div class="collapse" id="menu2">
+                  <ul class="list-unstyled">
+                    <li class="mb-2 d-flex align-items-center"><img src="image/Grilled Kofta Kebab.jpg"  class="me-2 rounded">Grilled Kofta Kebab<br>$15.00
+                    <button class="btn btn-sm   btn-outline-warning  ms-auto">Order</button></li>
+                     <li class="mb-2 d-flex align-items-center"><img src="image/Spicy Chickin Wings Kebab.jpg"  class="me-2 rounded">Spicy Chickin Wings Kebab<br>$17.00
+                    <button class="btn btn-sm   btn-outline-warning ms-auto"> Order</button></li>
+                     <li class="mb-2 d-flex align-items-center"><img src="image/Beef Tikka Kebab.jpg" class="me-2 rounded">Beef Tikka Kebab<br>$18.00
+                    <button class="btn btn-sm   btn-outline-warning ms-auto">  Order</button></li>
+                     <li class="mb-2 d-flex align-items-center"><img src="image/Grilled lamb Chops.jpg"  class="me-2 rounded">Grilled lamb Chops<br>$19.00
+                    <button class="btn btn-sm   btn-outline-warning ms-auto"> Order</button></li>
+                     <li class="mb-2 d-flex align-items-center"><img src="image/Reshmi Kebab.jpg"  class="me-2 rounded">Reshmi Kebab<br>$15.00
+                    <button class="btn btn-sm   btn-outline-warning ms-auto">Order</button></li>
+                     <li class="mb-2 d-flex align-items-center"><img src="image/Chicken Cheese Kebab.jpg"  class="me-2 rounded">Chicken Cheese Kebab<br>$14.99
+                    <button class="btn btn-sm   btn-outline-warning ms-auto"> Order</button></li>
+                     <li class="mb-2 d-flex align-items-center"><img src="image/Afghan Tikka Kebab.jpg"  class="me-2 rounded">Afghan Tikka Kebab<br>$15.00
+                    <button class="btn btn-sm   btn-outline-warning ms-auto"> Order</button></li>
+                     <li class="mb-2 d-flex align-items-center"><img src="image/Honey BBQ Chickin Skewer.jpg"  class="me-2 rounded"> Honey BBQ Chickin Skewers<br>$16.00
+                    <button class="btn btn-sm   btn-outline-warning ms-auto"> Order</button></li>
+                     <li class="mb-2 d-flex align-items-center"><img src="image/Moroccan Lamb Kebab.jpg" class="me-2 rounded">Moroccan Lamb Kebab<br>$18.00
+                    <button class="btn btn-sm   btn-outline-warning ms-auto">  Order</button></li>
+                     <li class="mb-2 d-flex align-items-center"><img src="image/Chicken Pinapple Skewers.jpg"  class="me-2 rounded">Chicken Pinapple Skewers<br>$15.00
+                    <button class="btn btn-sm   btn-outline-warning ms-auto"> Order</button></li>
+                  </ul>
+                  <ul class="list-unstyled mt-2">
+                    <li class="mb-2 d-flex align-items-center">
+                      <img src="image/Saffron Milk Shake.jpg"  class="me-2 rounded"> Saffron Milk Shake <br>$5.00
+                      <button class="btn btn-sm   btn-outline-warning ms-auto">Order</button>
+                    </li>
+                     <li class="mb-2 d-flex align-items-center">
+                      <img src="image/Iced Hibiscus Tea.jpg"  class="me-2 rounded"> Iced Hibiscus Tea<br>$4.59
+                      <button class="btn btn-sm   btn-outline-warning ms-auto">Order</button>
+                    </li>
+                     <li class="mb-2 d-flex align-items-center">
+                      <img src="image/Mango Lassi.jpg"  class="me-2 rounded"> Mango Lassi<br>$5.50
+                      <button class="btn btn-sm   btn-outline-warning ms-auto">Order</button>
+                    </li>
+                     <li class="mb-2 d-flex align-items-center">
+                      <img src="image/Blue Langoon Mocktail.jpg"  class="me-2 rounded"> Blue Langoon Mocktail<br>$4.23
+                      <button class="btn btn-sm   btn-outline-warning ms-auto">Order</button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- restaurant3 -->
+                <div class="mt-3">
+                <h5>Golden Grilled House</h5>
+                <button class="btn btn-sm   btn-outline-warning mb-2" data-bs-toggle="collapse" data-bs-target="#menu3">▾Menu</button>
+                <div class="collapse" id="menu3">
+                  <ul class="list-unstyled">
+                    <li class="mb-2 d-flex align-items-center"><img src="image/Tandoori Chicken Kebab.jpg"  class="me-2 rounded">Tandoori Chicken Kebab<br>$19.55
+                    <button class="btn btn-sm   btn-outline-warning ms-auto"> Order</button></li>
+                     <li class="mb-2 d-flex align-items-center"><img src="image/Kashmiri Seekh Kebab.jpg"  class="me-2 rounded">Kashmiri Seekh Kebab<br>$16.89 
+                    <button class="btn btn-sm   btn-outline-warning ms-auto">  Order</button></li>
+                     <li class="mb-2 d-flex align-items-center"><img src="image/Mint & Togurt Lamb Kebab.jpg"  class="me-2 rounded">Mint & Togurt Lamb Kebab<br>$20.00
+                    <button class="btn btn-sm   btn-outline-warning ms-auto"> Order</button></li>
+                     <li class="mb-2 d-flex align-items-center"><img src="image/Garlic Butter Chicken Skewers.jpg"  class="me-2 rounded">Garlic Butter Chicken Skewers<br>$11.00
+                    <button class="btn btn-sm   btn-outline-warning ms-auto"> Order</button></li>
+                     <li class="mb-2 d-flex align-items-center"><img src="image/Pomegranate Glazed Lamb.jpg"  class="me-2 rounded">Pomegranate Glazed Lamb <br>$18.00
+                    <button class="btn btn-sm   btn-outline-warning ms-auto">Order</button></li>
+                     <li class="mb-2 d-flex align-items-center"><img src="image/Lamb Shashlik (Persion Lamb Ribs).jpg"  class="me-2 rounded">Lamb Shashlik (Persian Lamb Ribs)<br>$18.99
+                    <button class="btn btn-sm   btn-outline-warning ms-auto">  Order</button></li>
+                     <li class="mb-2 d-flex align-items-center"><img src="image/Soltani Kebab(Barg + Koobideh Combo).jpg"  class="me-2 rounded">Soltani Kebab(Barg + Koobideh Combo)<br>$21.50
+                    <button class="btn btn-sm   btn-outline-warning ms-auto">  Order</button></li>
+                     <li class="mb-2 d-flex align-items-center"><img src="image/Kebab Barg Grilled Lamb Filled.jpg"  class="me-2 rounded">Kebab Barg (Grilled Lamb Filled)<br>$19.99
+                    <button class="btn btn-sm   btn-outline-warning ms-auto"> Order</button></li>
+                     <li class="mb-2 d-flex align-items-center"><img src="image/Chicken Malai Kebab.jpg"  class="me-2 rounded">Chicken Malai Kebab<br>$18.00
+                    <button class="btn btn-sm   btn-outline-warning ms-auto"> Order</button></li>
+                     <li class="mb-2 d-flex align-items-center"><img src="image/Club Barg (Grilled Fillet with Club style).jpg"  class="me-2 rounded">Club Barg (Grilled Fillet with Club style)<br>$13.00
+                    <button class="btn btn-sm   btn-outline-warning ms-auto">  Order</button></li>
+                  </ul>
+                  <ul class="list-unstyled mt-2">
+                    <li class="mb-2 d-flex align-items-center">
+                      <img src="image/Blue Langoon Mocktail1.jpg" class="me-2 rounded"> Blue Langoon Mocktail<br>$5.00
+                      <button class="btn btn-sm   btn-outline-warning ms-auto">Order</button>
+                    </li>
+                     <li class="mb-2 d-flex align-items-center">
+                      <img src="image/Data & Banana Smoothie.jpg"  class="me-2 rounded"> Data & Banana Smoothie <br>$4.23
+                      <button class="btn btn-sm   btn-outline-warning ms-auto">Order</button>
+                    </li>
+                     <li class="mb-2 d-flex align-items-center">
+                      <img src="image/Watermelon Mint Cooler.jpg"  class="me-2 rounded"> Watermelon Mint Cooler<br>$3.50
+                      <button class="btn btn-sm   btn-outline-warning ms-auto">Order</button>
+                    </li>
+                     <li class="mb-2 d-flex align-items-center">
+                      <img src="image/Strawberry Mojito.jpg"  class="me-2 rounded"> Strawberry Mojito<br>$4.99
+                      <button class="btn btn-sm   btn-outline-warning ms-auto">Order</button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- restaurant4 -->
+                <div class="mt-3">
+                <h5>Urban Bites</h5>
+                <button class="btn btn-sm   btn-outline-warning mb-2" data-bs-toggle="collapse" data-bs-target="#menu4">▾Menu</button>
+                <div class="collapse" id="menu4">
+                  <ul class="list-unstyled">
+                    <li class="mb-2 d-flex align-items-center"><img src="image/Classic Beef Burger.jpg" class="me-2 rounded">Classic Beef Burger<br>$15.00
+                    <button class="btn btn-sm   btn-outline-warning ms-auto">  Order</button></li>
+                     <li class="mb-2 d-flex align-items-center"><img src="image/Dubble CheeseBurger.jpg"  class="me-2 rounded">Dubble CheeseBurger<br>$13.00
+                    <button class="btn btn-sm   btn-outline-warning ms-auto"> Order</button></li>
+                     <li class="mb-2 d-flex align-items-center"><img src="image/BBQ Chicken Burger.jpg" class="me-2 rounded">BBQ Chicken Burger<br>$12.50
+                    <button class="btn btn-sm   btn-outline-warning ms-auto">  Order</button></li>
+                     <li class="mb-2 d-flex align-items-center"><img src="image/Spicy Crispy Chicken Burger.jpg"  class="me-2 rounded">Spicy Crispy Chicken Burger<br>$13.90
+                    <button class="btn btn-sm   btn-outline-warning ms-auto">  Order</button></li>
+                     <li class="mb-2 d-flex align-items-center"><img src="image/Lamb Burger with Yogurt.jpg"  class="me-2 rounded">Lamb Burger with Yogurt<br>$12.50
+                    <button class="btn btn-sm   btn-outline-warning ms-auto">  Order</button></li>
+                     <li class="mb-2 d-flex align-items-center"><img src="image/Chicken Club With Egg.jpg"  class="me-2 rounded">Chicken Club With Egg<br>$16.99
+                    <button class="btn btn-sm   btn-outline-warning ms-auto">  Order</button></li>
+                     <li class="mb-2 d-flex align-items-center"><img src="image/Club Sandwich.jpg"  class="me-2 rounded">Club Sandwich<br>$13.75
+                    <button class="btn btn-sm   btn-outline-warning ms-auto">Order</button></li>
+                     <li class="mb-2 d-flex align-items-center"><img src="image/Philly Cheese Steak Sandwich.jpg" class="me-2 rounded">Philly Cheese Steak Sandwich<br>$15.25
+                    <button class="btn btn-sm   btn-outline-warning ms-auto"> Order</button></li>
+                     <li class="mb-2 d-flex align-items-center"><img src="image/Grilled Chicken Pesto Sandwich.jpg"  class="me-2 rounded">Grilled Chicken Pesto Sandwich <br>$11.99
+                    <button class="btn btn-sm   btn-outline-warning ms-auto"> Order</button></li>
+                     <li class="mb-2 d-flex align-items-center"><img src="image/Roast Beef Sandwich.jpg"  class="me-2 rounded">Roast Beef Sandwich<br>$13.50
+                    <button class="btn btn-sm   btn-outline-warning ms-auto"> Order</button></li>
+                  </ul>
+                  <ul class="list-unstyled mt-2">
+                    <li class="mb-2 d-flex align-items-center">
+                      <img src="image/Coconut Lemon Sparkle.jpg"  class="me-2 rounded"> Coconut Lemon Sparkle<br>$5.00
+                      <button class="btn btn-sm   btn-outline-warning ms-auto">Order</button>
+                    </li>
+                     <li class="mb-2 d-flex align-items-center">
+                      <img src="image/Iced Doogh (Persion Yogurt)1.jpg"  class="me-2 rounded"> Iced Doogh (Persion Yogurt)<br>$4.49
+                      <button class="btn btn-sm   btn-outline-warning ms-auto"> Order</button>
+                    </li>
+                     <li class="mb-2 d-flex align-items-center">
+                      <img src="image/Carrot Orange Juice.jpg" class="me-2 rounded"> Carrot Orange Juice<br>$5.25
+                      <button class="btn btn-sm   btn-outline-warning ms-auto">  Order</button>
+                    </li>
+                     <li class="mb-2 d-flex align-items-center">
+                      <img src="image/Kiwi Cooler.jpg"  class="me-2 rounded"> Kiwi Cooler<br>$5.99
+                      <button class="btn btn-sm   btn-outline-warning ms-auto"> Order</button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Our Recommendations -->
+      <div class="col-lg-6 col-12 mb-4">
+        <div class="card my-card text-white ">
+          <div class="card-body">
+            <h3 class="card-title d-flex justify-content-between align-items-center"> Our Recommendations
+              <button class="btn btn-sm btn-outline-light" data-bs-toggle="collapse" data-bs-target="#offerList">▾</button>
+            </h3>
+            <div class="collapse" id="offerList">
+              <ul class="list-unstyled mt-3">
+                <li class="mb-2 d-flex align-items-center"><img src="image/Soltani Kebab, Rose Lemonade.jpg"  class="me-2 rounded" > Soltani Kebab, Rose Lemonade<br>$25.00
+                <button class="btn btn-sm   btn-outline-warning ms-auto"> Order</button></li>
+                  <li class="mb-2 d-flex align-items-center"><img src="image/Lamb Shashlik, Sparkling Pomegranate Juice.jpg"  class="me-2 rounded" > Lamb Shashlik, Sparkling Pomegranate Juice<br>$24.00
+                <button class="btn btn-sm   btn-outline-warning ms-auto">  Order</button></li>
+                  <li class="mb-2 d-flex align-items-center"><img src="image/Chopan Kebab, Iced Doog.jpg"  class="me-2 rounded" > Chopan Kebab, Iced Doogh<br>$23.00
+                <button class="btn btn-sm   btn-outline-warning ms-auto"> Order</button></li>
+                  <li class="mb-2 d-flex align-items-center"><img src="image/Chicken Club Sandwich, Strawberry Mojito.jpg"  class="me-2 rounded" > Chicken Malai Kebab, Mango Lassi <br>$19.74
+                <button class="btn btn-sm   btn-outline-warning ms-auto">  Order</button></li>
+                  <li class="mb-2 d-flex align-items-center"><img src="image/Classic Beef CheeseBurger, Mojito(non-Alcoholic).jpg"  class="me-2 rounded" > Classic Beef CheeseBurger, Mojito(non-Alcoholic)<br>$17.75
+                <button class="btn btn-sm   btn-outline-warning ms-auto">  Order</button></li>
+                  <li class="mb-2 d-flex align-items-center"><img src="image/Adana Kebab, Blue Lagoon Mocktail.jpg"  class="me-2 rounded" > Adana Kebab, Blue Lagoon Mocktail<br>$22.98
+                <button class="btn btn-sm   btn-outline-warning ms-auto">  Order</button></li>
+                  <li class="mb-2 d-flex align-items-center"><img src="image/Chicken Tikka, Iced Hibiscus Tea.jpg"  class="me-2 rounded" > Chicken Tikka, Iced Hibiscus Tea<br>$18.25
+                <button class="btn btn-sm   btn-outline-warning ms-auto"> Order</button></li>
+                  <li class="mb-2 d-flex align-items-center"><img src="image/Lamb Kofta, Carrot Orange Juice.jpg"  class="me-2 rounded" > Lamb Kofta, Carrot Orange Juice<br>$20.00
+                <button class="btn btn-sm   btn-outline-warning ms-auto"> Order</button></li>
+                  <li class="mb-2 d-flex align-items-center"><img src="image/Chicken Club Sandwich, Strawberry Mojito.jpg"  class="me-2 rounded" > Chicken Club Sandwich, Strawberry Mojito<br>$17.24
+                <button class="btn btn-sm   btn-outline-warning ms-auto">  Order</button></li>
+                  <li class="mb-2 d-flex align-items-center"><img src="image/BBQ Chicken Skewers, Virgin Pina Colada.jpg"  class="me-2 rounded" > BBQ Chicken Skewers, Virgin Pina Colada  <br>$19.49
+                <button class="btn btn-sm   btn-outline-warning ms-auto">Order</button></li>
+
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> </div>
+</section>
+<!-- Order Form -->
+<section id="Contact" class="order-contact mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-12 mb-4">
+         <div class="card my-card bg-outline-warning text-white">
+          <div class="card-body">
+            <h3 class="card-title d-flex justify-content-between align-items-center">Order Form
+             <button class="btn btn-sm btn-outline-light" data-bs-toggle="collapse" data-bs-target="#orderFormCollapse">▾</button>
+             </h3>
+             <div class="collapse" id="orderFormCollapse">
+             <form id="orderForm">
+              <div class="mb-3"> <label class="form-label">Name:</label>
+              <input type="text" class="form-control" required></div>
+              <div class="mb-3"> <label class="form-label">Number:</label>
+              <input type="text" class="form-control" required></div>
+              <div class="mb-3"> <label class="form-label">Customize Your Meal:</label>
+              <input type="text" class="form-control" required></div>
+              <button type="submit" class="btn btn-outline-warning">submit</button>
+            </form>
+            </div>
+          </div>
+         </div>
+        </div>
+        <!-- contactForm -->
+      <div class="col-lg-6 col-12 mb-4">
+       <div class="card my-card bg-outline-warning text-white">
+          <div class="card-body">
+            <h3 class="card-title d-flex justify-content-between align-items-center">Contact with Us
+             <button class="btn btn-sm btn-outline-light" data-bs-toggle="collapse" data-bs-target="#contactForm">▾</button>
+             </h3>
+             
+             <form id="contactForm">
+             <div class="collapse" id="contactForm">
+              <p class="text-center"> Have a question or suggestion? we'd love to hear from you!</p>
+               <div class="mb-3"> <label class="form-label">Name:</label>
+              <input type="text" class="form-control" required></div>
+              <div class="mb-3"> <label class="form-label">Email:</label>
+              <input type="text" class="form-control" required></div>
+              <div class="mb-3"> <label class="form-label"> Message:</label>
+             <textarea class="form-control" rows="4" ></textarea>
+              <button type="submit" class="btn btn-outline-warning">Send Message</button>
+            </form>
+            </div>
+          </div>
+
+      </div>
+      </div>
+  </div>
+<!-- </section> -->
+
+<section id="About" class="glass-box center-box">
+  <h2>About Us</h2>
+  <p>At Foodi Hub, we help you discover the best restaurants and enjoy top-quality service. Whether you're craving something special or just need a quick bite, we're here to guide you to the perfect choice — fast, fresh, and delicious.</p>
+</section>
+<!-- Services -->
+<section id="Services" class="glass-box center-box">
+  <h2>Our Services</h2>
+  <ul>
+    <li>🛵 Free delivery on all orders</li>
+    <li>🎁 Spend $30, get $10 free as a bonus</li>
+    <li>💳 Easy and secure online payment</li>
+    <li>🕒 Fast delivery within 30 minutes</li>
+    <li>🌐 Real-time order tracking</li>
+    <li>📱 Mobile-friendly ordering system</li>
+  </ul>
+</section>
+
+<!-- footer -->
+
+<footer class="footer text-light py-3 mt-4">
+  <div class="container text-center">
+    <div class="mb-2 bg-outline-warning">
+      <a href="https://wa.me/qr/DQKRM76V6QC2N1" class="text-light me-3"><i class="fab fa-whatsapp fa-lg"></i></a>
+      <a href="https://t.me/mahi200422" class="text-light me-3"><i class="fab fa-telegram fa-lg"></i></a>
+      <a href="https://www.instagram.com/mahsa_ansari2004/profilecard/?igsh=MWhsbGJka3U3M2l1MQ==" class="text-light me-3"><i class="fab fa-instagram fa-lg"></i></a>
+      <a href="#" class="text-light me-3"><i class="fab fa-facebook fa-lg"></i></a>
+    </div>
+
+     <small>
+    &copy;2025 Foodie Hub alright reserved.
+  </small>
+  </div>
+</footer>
+
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
